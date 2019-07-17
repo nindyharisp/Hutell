@@ -16,8 +16,8 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         Intent intent = getIntent();
-            mCurrHotel = (Data) intent.getSerializableExtra("Hutell");
-//            this.setTitle(mCurrHotel.getNamaHotel());
+            mCurrHotel = (Data) intent.getSerializableExtra("data");
+        this.setTitle(mCurrHotel.getNamaHotel());
 
         ImageView image = findViewById(R.id.detail_hotel_image);
         image.setImageResource(mCurrHotel.getImageId());

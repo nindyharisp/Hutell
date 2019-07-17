@@ -11,8 +11,8 @@ public class Data implements Serializable {
     private String alamatHotel;
     private int imageId;
 
-    public Data(String namaHotel, String lokasiHotel
-                , String alamatHotel ,String labelHotel, String  hargaHotel, int imageId) {
+    public Data(String namaHotel, String lokasiHotel, String alamatHotel,
+                String labelHotel, String  hargaHotel, int imageId) {
         this.namaHotel = namaHotel;
         this.lokasiHotel = lokasiHotel;
         this.alamatHotel = alamatHotel;
@@ -40,7 +40,6 @@ public class Data implements Serializable {
     public String getHargaHotel() {
         return hargaHotel;
     }
-
 
     public int getImageId() {
         return imageId;
