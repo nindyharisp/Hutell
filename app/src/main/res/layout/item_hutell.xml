@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginBottom="@dimen/default_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/item_hotel_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/hotel_name"
+        android:src="@drawable/gambar_jakput_oasis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="@string/hotel_name"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/item_hotel_image"
+        app:layout_constraintTop_toTopOf="@+id/item_hotel_image" />
+
+    <TextView
+        android:id="@+id/item_hotel_location"
+        app:layout_constraintLeft_toRightOf="@id/item_hotel_image"
+        android:text="@string/hotel_location"
+        android:maxLines="2"
+        app:layout_constraintTop_toBottomOf="@id/item_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_hotel_lbl_price"
+        app:layout_constraintLeft_toRightOf="@id/item_hotel_image"
+        android:text="@string/hotel_price_label"
+        app:layout_constraintTop_toBottomOf="@id/item_hotel_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_hotel_price"
+        app:layout_constraintLeft_toRightOf="@id/item_hotel_lbl_price"
+        android:text="@string/hotel_price_sample"
+        android:layout_marginLeft="@dimen/minimum_margin"
+        android:layout_marginStart="@dimen/minimum_margin"
+        app:layout_constraintTop_toBottomOf="@id/item_hotel_location"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

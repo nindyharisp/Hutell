@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hutell</string>
+    <string name="hotel_name">Oasis Amir Hotel</string>
+    <string name="hotel_location">Jakarta Pusat</string>
+    <string name="hotel_price_sample">IDR 166.840/room/night</string>
+    <string name="hotel_price">IDR %s/room/night</string>
+    <string name="hotel_pure_price">IDR %s</string>
+    <string name="hotel_price_label">Starting from</string>
+    <string name="detail_hotel_image">Detail hotel image</string>
+</resources>
